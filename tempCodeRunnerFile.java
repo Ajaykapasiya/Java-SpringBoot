@@ -1,1 +1,2 @@
-    // List<Object> arr = new ArrayList<>();
+   int a = sc.nextInt();
+   System.out.println(a);
