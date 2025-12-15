@@ -24,13 +24,12 @@ import javax.script.ScriptContext;
 
 //         System.out.println("Enter your age: ");
 //         int age = sc.nextInt();
-        
 
 //         System.out.println("Hello " + name + ", you are " + age + " years old.");
 
 //         for (int i = 0; i <= 10; i++) {
 //             System.out.println(i);
-            
+
 //         }
 
 //         System.out.println("Enter the number: ");
@@ -42,8 +41,6 @@ import javax.script.ScriptContext;
 //         else{
 //             System.out.println("Odd");
 //         }
-
-
 
 //     }
 // }
@@ -60,7 +57,6 @@ import javax.script.ScriptContext;
 //     //     System.out.println(s);
 //     // }
 
-
 //     Scanner sc = new Scanner(System.in);
 //    int a = sc.nextInt();
 //    System.out.println(a);
@@ -68,17 +64,87 @@ import javax.script.ScriptContext;
 //    String name = sc.nextLine();
 //    System.out.println(name);
 
+// }
+// }
+// public class Test2{
+// static void checkEvenOdd(int num){
+//     if (num%2 == 0) {
+//         System.err.println("Even");
+//     }
+//     else{
+//         System.err.println("Odd");
+//     }
 
-
+// }
+// public static void main(String[]args){
+//     checkEvenOdd(10);
 // }
 // }
 
-static void checkEvenOdd(int num){
-    if (num%2 == 0) {
-        System.err.println("Even");
+// public class Test2 {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int[] arr = new int[5];
+
+//         for (int i = 0; i < 5; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // for (int i = 0; i < arr.length; i++) {
+//         //     System.err.println(arr[i]);
+//         // }
+
+//         for(int x : arr){
+//             System.out.println(x);
+//         }
+
+//     }
+// }
+
+
+
+public class Test2 {
+
+    static int findMax(int[] arr){
+            int max = arr[0];
+            for(int i = 0; i<arr.length; i++){
+               if(arr[i] > max){
+                max = arr[i];
+               }
+            }
+
+            return max;
+        }
+
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the Array: ");
+
+        int[] arr = new int[5];
+
+        for(int i = 0; i<5; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        for(int i = 0; i<arr.length ; i++){
+            System.out.println("The arrary is:");
+            System.out.println(arr[i]);
+        }
+
+        int result = findMax(arr);
+        System.out.println("The max array is: " + result);
+
+        sc.nextLine();
+        System.out.println("Enter your name: ");
+
+        String name = sc.nextLine();
+        System.out.println("Your name is " + name);
+
     }
-    else{
-        System.err.println("Odd");
-    }
-    checkEvenOdd(10);
 }
+
+
+ 
