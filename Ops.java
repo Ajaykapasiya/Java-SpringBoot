@@ -24,6 +24,10 @@ class Student{
         System.out.println(this.rollno);
     }
 
+    Student(){
+        System.out.println("Non-parameterized constructor, also known as a default constructor");
+    }
+
 }
 
 
