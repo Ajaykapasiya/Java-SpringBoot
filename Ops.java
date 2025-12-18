@@ -13,14 +13,29 @@ class Pen{
    }
 }
 
-public class Ops {
-   public static  void main(String[]args){
-      Pen pen1 = new Pen();
-      pen1.name = "Pilot";
-      pen1.type = "Ballpoint";
+class Student{
+    String name;
+    int age; 
+    int rollno ;
 
-      pen1.write();
-      pen1.printColour();
-      pen1.printType();
-   }
+    public void printName(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+        System.out.println(this.rollno);
+    }
+
+}
+
+
+
+public class Ops {
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.name = "Rick";
+        s1.age = 23;
+        s1.rollno = 457834;
+
+        s1.printName();
+    }
 }
