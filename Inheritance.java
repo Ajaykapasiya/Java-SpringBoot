@@ -1,3 +1,5 @@
+import bank.*;
+
 
 class Shape {
     String colour;
@@ -12,6 +14,10 @@ public class Inheritance {
         t1.colour = "Blue";
         System.out.println(t1.colour);
 
+
+
+        bank.Account acc1 = new bank.Account();
+        acc1.name = "Rick";
         
     }
 }
