@@ -1,5 +1,8 @@
 abstract class Animal {
   abstract void walk();
+  public void eat(){
+    System.out.println("vnfvfjnv");
+  }
     
 }
 
@@ -19,6 +22,7 @@ public class Abstraction {
     public static void main(String[] args) {
        Horse ho = new Horse();
        ho.walk();
+       ho.eat();
        
        Dog do1 = new Dog();
        do1.walk();
