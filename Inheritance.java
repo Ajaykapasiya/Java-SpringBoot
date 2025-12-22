@@ -16,8 +16,9 @@ public class Inheritance {
 
 
 
-        bank.Account acc1 = new bank.Account();
+        Account acc1 = new Account();
         acc1.name = "Rick";
+        System.out.println(acc1.name);
         
     }
 }
